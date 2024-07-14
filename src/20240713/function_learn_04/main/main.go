@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// defer在函数中以先入后出的原则
+// defer在函数中以先入后出的原则、在上边的后输出
 
 func getSum(a int, b int) int {
 	defer fmt.Printf("defer 01 : %v/n", a) // 再执行 01  a->2

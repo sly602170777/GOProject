@@ -17,7 +17,14 @@ type Order struct {
 type Fruit struct {
 	Name  string
 	Price int
-	Ptr   *int              //指针
+	Ptr   *int              //<- ポインタ定義
 	Arr   []string          //切片
 	Map1  map[string]string //map
+}
+
+/** JSONデコード用に構造体定義 **/
+type People struct {
+	ID   string `json:"id"`
+	Name string `json:"name"`
+	Age  int    `json:"age"`
 }

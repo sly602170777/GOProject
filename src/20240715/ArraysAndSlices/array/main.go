@@ -27,9 +27,9 @@ func test03() {
 	}
 	fmt.Println("随机生成的数组----反转之前", arr) // [84 15 94 40 85]
 
-	var arrTemp [5]int
+	var arrTemp [len(arr)]int
 	for i := len(arr); i > 0; i-- {
-		arrTemp[5-i] = arr[i-1]
+		arrTemp[len(arr)-i] = arr[i-1]
 	}
 	fmt.Println("随机生成的数组----反转之后", arrTemp) // [85 40 94 15 84]
 }

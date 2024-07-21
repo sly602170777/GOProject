@@ -1,5 +1,7 @@
 # 基本快捷键
 
+`https://laomiao.site/vscode-%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87%E7%9A%84%E6%93%8D%E4%BD%9C`
+
 ```javascript
 打开命令面板（Ctrl+Shift+P）并输入搜索：快速搜索命令
 格式化文档（Shift+Alt+F）- 格式化整个活动文件

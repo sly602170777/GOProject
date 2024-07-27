@@ -79,4 +79,30 @@ func main() {
 	str := getPeopleInf()
 	//未使用struct的tag标签时 {"ID":"No002","Name":"tom","Age":20}
 	fmt.Printf("转义后的json格式%v\n", str) //{"id":"No002","name":"tom","age":20}
+
+	//为model包添加一个NewStudent方法 返回一个指针型的student
+	student := master.NewStudent("termp", 78)
+	fmt.Println("工厂模式下的student：", *student) // {termp 78}
+	//fmt.Println(student.name) 当name首字母小写时不能直接访问需要进行函数处理
+	fmt.Println(student.GetStudentName()) //termp
+	fmt.Println(student.Age)
+
+	//使用匿名构造体 实现继承 小学生
+	prisut := &master.PrimaryStudent{}
+	//指定匿名构造体名字来给属性赋值
+	prisut.Student.Name = "Tom"
+	prisut.Student.Age = 12
+	prisut.Testing()
+	prisut.Student.SetScore(90)
+	prisut.ShowInfo()
+
+	//使用匿名构造体 实现继承 高中生
+	higsut := &master.HighStudent{}
+	//指定匿名构造体名字来给属性赋值
+	higsut.Student.Name = "Mary"
+	higsut.Student.Age = 42
+	higsut.Testing()
+	higsut.Student.SetScore(80)
+	higsut.ShowInfo()
+
 }

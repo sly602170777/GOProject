@@ -11,6 +11,9 @@
 展开全部（Ctrl+K Ctrl+J）展开编辑器中的所有区域。
 切换折叠（Ctrl+K Ctrl+L）折叠或展开光标处的区域。
 全文件查找：Ctrl + Shift + F
+行を複製： Alt + shift + ↑/↓ 
+多行注释：Ctrl + K + C //内容
+多行注释：Ctrl + Shift + /    /* 内容*/
 
 折叠所有块注释（Ctrl+K Ctrl+/）折叠所有以块注释标记开头的区域。
 

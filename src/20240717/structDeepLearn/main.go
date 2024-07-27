@@ -37,4 +37,5 @@ func main() {
 	i.changePrintHaveParam(&k)
 	fmt.Println("main() i=", i) //main() i= 50
 	fmt.Println("main() k=", k) //main() k= 30
+
 }

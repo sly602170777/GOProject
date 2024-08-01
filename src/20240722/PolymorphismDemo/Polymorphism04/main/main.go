@@ -55,4 +55,7 @@ func main() {
 
 	//生成一个多表查询的SQL
 	fmt.Println("生成一个多表查询的SQL")
+	//日本語で出力　Hello world
+	fmt.Println("日本語で出力　Hello world　")
+
 }

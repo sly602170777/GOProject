@@ -2,9 +2,9 @@
 
 Go语言设计的关键字，了解这些关键字有助于命名变量的冲突避免
 
-### go的二十五个关键字
+## go的二十五个关键字
 
-```
+```go
 break    default      func    interface    select
 case     defer        go      map          struct
 chan     else         goto    package      switch
